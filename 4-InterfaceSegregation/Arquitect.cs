@@ -1,8 +1,8 @@
 namespace InterfaceSegregation
 {
-    public class Tester : IWorkTeamActivities, ITestActivities
+    class Arquitect : IActivities
     {
-        public Tester()
+        public void Tester()
         {
         }
 
@@ -18,7 +18,17 @@ namespace InterfaceSegregation
 
         public void Test() 
         {
-            Console.WriteLine("I am a tester and I'm testing a app.");
+            throw new ArgumentException();
+        }
+
+        public void Design()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Develop()
+        {
+            throw new NotImplementedException();
         }
     }
 }
